@@ -124,6 +124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 841653b785dc2419980912b42d1c1911, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cannonPrefab: {fileID: 151920, guid: a8294bc18e1de4a8da4ec06722a8fdb7, type: 2}
 --- !u!1 &419780888
 GameObject:
   m_ObjectHideFlags: 0

@@ -14,7 +14,7 @@ GameObject:
   - 54: {fileID: 5456206}
   - 114: {fileID: 11429882}
   m_Layer: 0
-  m_Name: Cannon
+  m_Name: CannonProjectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

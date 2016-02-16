@@ -2,10 +2,11 @@
 using System.Collections;
 using weapons;
 
-public class CannonProjectile : Projectile {
+public class CannonProjectile : ProjectileBase {
 	public void Awake() {
-		addWT();
+		addNewWeaponType();
 	}
+		
 	public override void Start () {
 
 	}
