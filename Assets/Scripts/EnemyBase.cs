@@ -50,9 +50,12 @@ namespace BaseEnemy
 		public abstract void Start();
 		public abstract void FixedUpdate();
 
+
 		public void OnCollisionEnter(Collision collision) {
 			//TODO check what weapon fired us and remove health
 			print("/// Collision Enter ///");
+			
+			
 		}
 	}
 }

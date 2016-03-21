@@ -33,6 +33,8 @@ namespace weapons
 		private float damage;
 		[SerializeField]
 		private float damageRadius;
+		[SerializeField]
+		private bool splashDamage = false;
 
 //		protected ProjectileBase(ProjectileBase p) {WeaponTypes.addProjectile(p); }
 
@@ -48,10 +50,21 @@ namespace weapons
 		protected void applyForce(Vector3 force) {
 			getRigidbody().AddForce(force);
 		}
+
+		public float getDamage() {
+			return damage;
+		}
 			
 		public abstract void Update();
 		public abstract void Start();			
 		public abstract void FixedUpdate();
+
+		/*TODO when we hit something what radius should damage be applied to?
+		 * 	   Do a module that returns all game-objects withing given point
+		 */
+		protected float calculateSplashRadius() {
+			return 0.0f;
+		}
 	}
 
 }

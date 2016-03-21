@@ -10,7 +10,11 @@ public class SlowEnemy : EnemyBase {
 	public override void FixedUpdate() {
 		applyForce(getVelocity());
 	}
-	new public void OnCollisionEnter(Collision collision) {
-		
+
+	/*TODO is there  a way to call the BaseClass
+		   collider if we derive new collider
+		   in the Child?
+	new public void OnCollisionEnter(Collision collision) {		
 	}
+	*/
 }

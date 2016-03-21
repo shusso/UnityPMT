@@ -13,8 +13,8 @@ public class CannonProjectile : ProjectileBase {
 	public override void FixedUpdate() {
 		applyForce(getVelocity());
 	}
-	public override void Update () {
-	
+	public override void Update() {
+		
 	}
 
 	void OnCollisionTrigger(Collision collision) {
