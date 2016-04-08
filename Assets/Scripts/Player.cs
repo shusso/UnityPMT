@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 using weapons;
+using Locator;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour {
 
@@ -8,7 +10,16 @@ public class Player : MonoBehaviour {
 
 	public GameObject cannonPrefab;
 
-	Vector3 velocity = new Vector3(0, 0, 400);
+	public Vector3 velocity = new Vector3(0, 0, 400);
+
+	private ObjectsLocator locator = new ObjectsLocator();
+
+	void Start() {
+		locator.GetGameObjects(1.0f);
+		locator.FindObjectsFromLayer("myLayer");
+
+	}
+
 
 	void Update () {
 		if (Input.GetKeyDown(KeyCode.Mouse0)) {
@@ -20,7 +31,7 @@ public class Player : MonoBehaviour {
 			var s = Camera.main.ScreenToWorldPoint(l);
 			var cannon = Instantiate(cannonPrefab, s, Quaternion.identity) as GameObject;
 			cannon.GetComponent<Rigidbody>().AddForce(velocity);
-			Destroy(cannon, 6.0f);
+			Destroy(cannon, 12.0f);
 		}
 		
 	}
