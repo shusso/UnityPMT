@@ -16,7 +16,7 @@ public class Player : MonoBehaviour {
 
 	void Start() {
 		locator.GetGameObjects(1.0f);
-		locator.FindObjectsFromLayer("myLayer");
+		locator.FindObjectsFromLayer(Locator.Layers.UI);
 
 	}
 
