@@ -17,7 +17,6 @@ public class Player : MonoBehaviour {
 	void Start() {
 		locator.GetGameObjectsInRadius(transform.position, 1.0f);
 		locator.FindObjectsFromLayer(Locator.Layers.UI);
-
 	}
 
 
@@ -27,7 +26,8 @@ public class Player : MonoBehaviour {
 
 			var l = new Vector3(Input.mousePosition.x,
 				Input.mousePosition.y, enemyZValue);
-			
+
+
 			var s = Camera.main.ScreenToWorldPoint(l);
 			var cannon = Instantiate(cannonPrefab, s, Quaternion.identity) as GameObject;
 			cannon.GetComponent<Rigidbody>().AddForce(velocity);
