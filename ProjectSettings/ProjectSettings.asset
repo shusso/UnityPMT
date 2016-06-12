@@ -442,7 +442,7 @@ PlayerSettings:
   WebGL::template: APPLICATION:Default
   additionalIl2CppArgs::additionalIl2CppArgs: 
   vectorPropertyNames: []
-  cloudProjectId: 589b53f6-63ba-453a-ad6c-c135a24a26b3
-  projectName: PillageMyTower
-  organizationId: babbi
+  cloudProjectId: 
+  projectName: 
+  organizationId: 
   cloudEnabled: 0
